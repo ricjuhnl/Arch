@@ -14,9 +14,8 @@ inetutils
 intel-ucode
 keepassxc
 keychain
-kubeadm
+kitty
 kubectl
-kubelet
 lazygit
 less
 micro
@@ -27,7 +26,6 @@ networkmanager-openconnect
 nfs-utils
 nm-connection-editor
 openconnect
-otf-cascadia-code
 otf-font-awesome
 python-pip
 slack-desktop
@@ -37,7 +35,6 @@ tealdeer
 termius
 trash-cli
 ttf-font-awesome
-unarchiver
 unzip
 virtualbox
 wget
@@ -47,3 +44,8 @@ zed
 zoxide
 zsh
 zsh-completions
+visual-studio-code-bin
+thorium-browser-bin
+zen-browser-bin
+zoom
+nordzy-cursors

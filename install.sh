@@ -26,6 +26,15 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+# Verify yay installation
+echo "Verifying yay installation..."
+if command -v yay &> /dev/null; then
+    echo "✓ yay installed successfully"
+else
+    echo "✗ yay installation failed. Exiting."
+    exit 1
+fi
+
 # Check if the apps_list.txt file exists
 if [ ! -f "apps_list.txt" ]; then
     echo "Error: apps_list.txt file not found!"
@@ -35,19 +44,6 @@ fi
 # Install packages from the list
 echo "Installing packages from apps_list.txt..."
 for x in $(cat apps_list.txt); do 
-    echo "Installing $x..."
-    sudo pacman -S --noconfirm $x
-done
-
-# Check if the apps_list.txt file exists
-if [ ! -f "aur_list.txt" ]; then
-    echo "Error: aur_list.txt file not found!"
-    exit 1
-fi
-
-# Install packages from the list
-echo "Installing packages from aur_list.txt..."
-for x in $(cat aur_list.txt); do 
     echo "Installing $x..."
     yay -S --noconfirm $x
 done

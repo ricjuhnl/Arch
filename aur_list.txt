@@ -1,5 +1,0 @@
-visual-studio-code-bin
-thorium-browser-bin
-zen-browser-bin
-zoom
-nordzy-cursors
