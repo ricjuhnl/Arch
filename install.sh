@@ -36,14 +36,15 @@ else
 fi
 
 # Check if the apps_list.txt file exists
-if [ ! -f "apps_list.txt" ]; then
+cd $builddir
+if [ ! -f "$builddir/apps_list.txt" ]; then
     echo "Error: apps_list.txt file not found!"
     exit 1
 fi
 
 # Install packages from the list
 echo "Installing packages from apps_list.txt..."
-for x in $(cat apps_list.txt); do 
+for x in $(cat $builddir/apps_list.txt); do 
     echo "Installing $x..."
     yay -S --noconfirm $x
 done
@@ -52,7 +53,7 @@ echo "Package installation complete!"
 
 # Installing fonts
 echo "Installing Nerd fonts"
-cd $builddir
+cd /tmp
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Mononoki.zip
 unzip CascadiaCode.zip -d /home/$username/.local/share/fonts

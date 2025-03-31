@@ -38,8 +38,9 @@ ttf-font-awesome
 unzip
 virtualbox
 wget
+wl-clipboard
 xorg
-yazi-git
+yazi
 zed
 zoxide
 zsh
