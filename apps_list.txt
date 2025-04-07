@@ -1,11 +1,16 @@
 bat
 bitwarden
+bluez
+bluez-utils
 btop
 curl
+docker
+docker-compose
 dnsutils
 eza
 fastfetch
 firefox
+fprintd
 fzf
 ghostty
 glow
