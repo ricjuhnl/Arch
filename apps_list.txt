@@ -6,10 +6,12 @@ btop
 curl
 docker
 docker-compose
+docker-buildx
 dnsutils
 eza
 fastfetch
 firefox
+freelens-bin
 fprintd
 fzf
 ghostty
